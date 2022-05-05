@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(#d5fff8, #00ff7e);
+}
+.name{
+    border-right:  1px solid #222f28;
+    color: #222f28;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation{
+    animation: blinkCursor 800ms infinite normal, typing 4s steps(40) 1s normal both    ;
+}
+
+@keyframes  typing {
+    from{
+        width: 0;
+    }
+    to {
+        width: 17.5em;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: #222f28;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    width: 19vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 6rem;
+    color: white;
+    box-shadow: 0 0 1em #222f28 ;
+    
+}
+
+.background-result{
+    background-color: white;
+    width: 13.5rem;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+#result{
+    color: #222f28;
+    text-align: right;
+    padding: 5px;
+}
+
+.option{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #2e3833;
+    color: #d5fff8;
+    margin: 3px;
+    border: none;
+}
+
+.option:hover{
+    background-color: #222f28 ;
+}
